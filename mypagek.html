@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niyama - Menstruation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f0e6;
+            color: #5a3e2b;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: white;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .search-nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .search-bar input {
+            width: 250px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .nav-container {
+            display: flex;
+            background: #9c7b5e;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .nav-bar {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-bar a {
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #7b4d35;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f4f0e6;
+            border-radius: 8px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .text-section {
+            width: 60%;
+        }
+        .image-section {
+            width: 35%;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #7b4d35;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .search-nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content {
+                flex-direction: column;
+            }
+            .text-section, .image-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span>NIYAMA</span>
+        </div>
+        <div class="search-nav">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="nav-container">
+                <div class="nav-bar">
+                    <a href="home.html">HOME</a>
+                    <a href="about.html">COMMUNITY</a>
+                    <a href="#">FAQS</a>
+                    <a href="#">CONNECT WITH US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Menstruation</h1>
+        <div class="content">
+            <div class="text-section">
+                <p><span class="bold">Menstruation (periods)</span> is the shedding of the uterine lining, occurring approximately every 28 days. It marks the start of puberty in girls, usually between 10-15 years.</p>
+                <h2>What Happens During a Period?</h2>
+                <ul>
+                    <li>The uterus prepares a lining for a possible pregnancy.</li>
+                    <li>If pregnancy doesn’t happen, the lining sheds as blood.</li>
+                    <li>The cycle repeats every 21-35 days, lasting 2-7 days.</li>
+                </ul>
+                <h2>Common Issues</h2>
+                <ul>
+                    <li><span class="bold">Irregular Periods</span> – It’s normal in the first few years as the body adjusts.</li>
+                    <li><span class="bold">Menstrual Cramps (Dysmenorrhea)</span> – Pain due to uterus contractions.</li>
+                    <li><span class="bold">Fatigue & Weakness</span> – Loss of iron and changes in hormones.</li>
+                    <li><span class="bold">Heavy or Light Flow</span> – Flow amount may vary, but extreme changes should be checked.</li>
+                    <li><span class="bold">Premenstrual Syndrome</span> – Symptoms like bloating, mood swings, and headache before period triggered by hormonal fluctuations.</li>
+                </ul>
+            </div>
+            <div class="image-section">
+                <img src="kumapic/iimage.jpg" alt="Menstruation Awareness">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

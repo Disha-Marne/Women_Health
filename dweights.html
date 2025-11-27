@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Management Diet Guide</title>
+    <link rel="stylesheet" href="stylem.css">
+</head>
+<style>
+    /* Reset Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #F4F6F8;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(120deg, #002B5B, #007B7F);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Diet Sections */
+.diet-section {
+    margin: 40px 0;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.diet-section h2 {
+    color: #005F73;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Food Container */
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Food Cards */
+.food-card {
+    background: #E3F2FD;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.food-card img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.food-card h3 {
+    color: #003B73;
+    font-size: 18px;
+}
+
+.food-card p {
+    font-size: 14px;
+}
+
+/* Foods to Avoid */
+.avoid {
+    background: #FFCCBC;
+}
+
+.avoid-card {
+    background: #FBE9E7;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background: #002B5B;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .food-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .food-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>🥗 Weight Management Diet Guide ⚖️</h1>
+        <p>Achieve a healthy balance with the right foods!</p>
+    </header>
+
+    <section class="diet-section">
+        <h2>✅ Best Foods for Weight Management</h2>
+        <div class="food-container">
+            <div class="food-card">
+                <img src="pics/salmon.jpg" alt="Lean Protein">
+                <h3>Lean Protein</h3>
+                <p>Chicken, tofu, and fish help with muscle growth & fat loss.</p>
+            </div>
+            <div class="food-card">
+                <img src="pics/leafy-greens.jpg" alt="Leafy Greens">
+                <h3>Leafy Greens</h3>
+                <p>Low in calories but high in nutrients & fiber.</p>
+            </div>
+            <div class="food-card">
+                <img src="pics/fibre_foods.jpg" alt="Whole Grains">
+                <h3>Whole Grains</h3>
+                <p>Oats, brown rice & quinoa keep you full for longer.</p>
+            </div>
+            <div class="food-card">
+                <img src="pics/healthy_fats.jpg" alt="Healthy Fats">
+                <h3>Healthy Fats</h3>
+                <p>Avocados, nuts & olive oil support metabolism.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="diet-section avoid">
+        <h2>❌ Foods to Avoid</h2>
+        <div class="food-container">
+            <div class="food-card avoid-card">
+                <img src="pics/carbonated_drinks.jpg" alt="Sugary Drinks">
+                <h3>Sugary Drinks</h3>
+                <p>High in empty calories and cause weight gain.</p>
+            </div>
+            <div class="food-card avoid-card">
+                <img src="pics/fast-food.jpg" alt="Fast Food">
+                <h3>Fast Food</h3>
+                <p>Loaded with trans fats and processed carbs.</p>
+            </div>
+            <div class="food-card avoid-card">
+                <img src="pics/alcohol.jpg" alt="Alcohol">
+                <h3>Alcohol</h3>
+                <p>Increases calorie intake and disrupts metabolism.</p>
+            </div>
+            <div class="food-card avoid-card">
+                <img src="pics/junk_food.jpg" alt="Processed Snacks">
+                <h3>Processed Snacks</h3>
+                <p>Packed with preservatives and unhealthy fats.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>💖 Balance Your Diet, Balance Your Life! 💖</p>
+    </footer>
+
+</body>
+</html>

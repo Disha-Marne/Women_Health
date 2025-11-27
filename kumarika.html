@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIYAMA - Kumarika</title>
+    <!--link rel="stylesheet" href="kumarika.css"-->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<style>@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+    /* Reset styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      
+      /* Body */
+      body {
+        background-color: #f5e8dc;
+      }
+      
+      /* Navbar */
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+        background-color: #F5E8DC;
+        border-bottom: 2px solid #B07C56;
+      }
+      
+      /* Logo */
+      .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #5D4037;
+      }
+      
+      /* Search Bar */
+      .search-container {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 20px;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+      }
+      
+      .search-container i {
+        color: #5D4037;
+        margin-right: 5px;
+      }
+      
+      .search-container input {
+        border: none;
+        outline: none;
+        background: none;
+      }
+      
+      /* Navbar Links */
+      .nav-links {
+        display: flex;
+        gap: 20px;
+        background-color: #B07C56;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+      
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      .no-style{
+        text-decoration: none;
+        color:inherit;
+        cursor: pointer;
+      }
+      
+      /* Main Content */
+      .container {
+        display: flex;
+        width: 90%;
+        margin: 30px auto;
+        justify-content: space-between;
+      }
+      
+      /* Left Section */
+      .left-section {
+        width: 30%;
+        text-align: center;
+        position: relative;
+      }
+      .kumarika-text {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Oregano', cursive;
+        color:#582308;
+        position: absolute;
+        top: -30px;
+        left: 35%;
+        transform: translateX(-50); 
+    
+      }
+      
+      .left-section img {
+        width: 100%;
+        height: 380px;
+        border-radius: 10px;
+        margin-top: 17px;
+        object-fit: cover;
+      }
+      
+      .left-section p {
+        font-size: 16px;
+        font-style: italic;
+        color: #5a4636;
+        margin-top: 5px;
+      }
+      
+      /* Right Section (Grid Layout) */
+      .right-section {
+        width: 65%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
+      
+      /* Topic Cards */
+      .topic {
+        background-color: #e8b89f;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .topic img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-top: 5px;
+        font-size: 16px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      
+      .topic:hover {
+        background-color: #d7957e;
+      }
+      </style>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="community.html">COMMUNITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+        <div class="girl-container">
+            <div class="kumarika-text">Kumarika</div>
+            <img src="kumapic/girl-imagek.jpg.webp" alt="Girl">
+            </div>
+            <p>"You are a spark of endless possibilities, growing brighter with every dream you chase. ✨ Stay curious, stay bold—the world is yours to explore! ❤️"</p>
+        </div>
+
+
+        <!-- Right Section (Clickable Boxes) -->
+        <div class="right-section">
+            <a href="menstruationk.html" class="no-style">
+            <div class="topic" >
+                <img src="kumapic/menstruationk.jpg" alt="Menstruation">
+                Menstruation
+            </div>
+        </a>
+        <a href="pubertyk.html" class="no-style">
+            <div class="topic">
+                <img src="kumapic/pubertyk.jpg" alt="Early Puberty & Growth">
+                Early Puberty & Growth
+            </div>
+        </a>
+        <a href="Nutritionk.html" class="no-style">
+            <div class="topic" >
+                <img src="kumapic/nutritionk.jpg" alt="Nutritional needs & deficiencies">
+                Nutritional needs & deficiencies
+            </div>
+        </a>
+        <a href="hormonesk.html" class="no-style">
+            <div class="topic" >
+                <img src="kumapic/hormonesk.jpg" alt="Hormonal Changes">
+                Hormonal Changes
+            </div>
+        </a>
+        <a href="mentalk.html" class="no-style">
+            <div class="topic" >
+                <img src="kumapic/mentalk.jpg" alt="Mental Health">
+                Mental Health
+            </div>
+        </a>
+    
+        <a href="skink.html" class="no-style">
+            <div class="topic" >
+                <img src="kumapic/skink.jpg" alt="Skin & Hair Problems">
+                Skin & Hair Problems
+            </div>
+          </a>
+           <a href="weightk.html" class="no-style">
+            <div class="topic" >
+                <img src="kumapic/weightk.jpg" alt="Weight Management Issues">
+                Weight Management Issues
+            </div>
+         </a>
+           <!--a href="exercise.html" class="no-style">
+            <div class="topic" >
+                <img src="exercise.jpg" alt="Diets & Exercises">
+                Diets & Exercises
+            </div-->
+        </div>
+    </div>
+
+</body>
+</html>

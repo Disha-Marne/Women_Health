@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIYAMA - Kumarika</title>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="community.html">COMMUNITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background-color: #f5e8dc;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #f5e8dc;
+    border-bottom: 2px solid #B07C56;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #5D4037;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-container i {
+    color: #5D4037;
+    margin-right: 5px;
+  }
+  
+  .search-container input {
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  /* Navbar Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    background-color: #B07C56;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .text-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .text-box h2 {
+            color: #3d1d10;
+        }
+
+        .text-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .text-box ul li {
+            margin: 10px 0;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card {
+            flex: 1;
+            min-width: 150px;
+            max-width: 250px;
+            text-align: center;
+            background-color: #b47d5e;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .search-bar {
+                order: -1;
+                margin-bottom: 10px;
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+        }
+
+        .symptom2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .sym2-1 {
+            flex: 1 1 200px;
+            margin: 10px;
+            background-color: #e8b89b;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 5px 8px #e8b89b;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function searchFunction() {
+            let input = document.getElementById("search-input").value.toLowerCase();
+            let elements = document.querySelectorAll(".container h1, .text-box ul li, .card h3");
+
+            elements.forEach(el => {
+                if (el.textContent.toLowerCase().includes(input)) {
+                    el.style.display = "block";
+                } else {
+                    el.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+    
+    <br>
+    <div class="symptom2">
+        <div class="sym2-1">
+            <h1>Skin & Hair Problems</h1>
+            Skin and hair problems refer to conditions affecting the health and appearance of the skin and hair, often caused by hormonal changes, nutritional deficiencies, stress, or external factors. Common issues include acne, hair thinning, dryness, hyperpigmentation, and dandruff. Proper care, a balanced diet, and hydration help in prevention and treatment.
+        </div>
+    </div>
+    <div class="content">
+        <div class="text-box">
+            <h3 align="center">Various Skin & Hair Problems</h3> 
+            <div class="symptom2">
+                <div class="sym2-1">
+                    <ul style="list-style-type:disc;">
+                        <li><span class="highlight"> Anemia </span> – A condition caused by low red blood cells, often due to iron deficiency, leading to fatigue and weakness.</li><br>
+                        <li><span class="highlight"> Hair Thinning & Loss </span> – Linked to hormonal imbalances, stress, and nutritional deficiencies.</li><br>
+                        <li><span class="highlight">  Hyperpigmentation  </span> – Dark patches caused by hormonal shifts, sun exposure, or inflammation. </li><br>
+                        <li><span class="highlight">  Dandruff  </span> – Flaky scalp due to dryness, fungal infections, or product buildup</li><br>
+                        <li><span class="highlight">  Dry Skin  </span> – Often due to dehydration, aging, or lack of essential nutrients.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards">
+        <!--div class="card">
+            <a href="exerciseskink.html"><img src="kumapic/dietk.jpg" alt="Exercise"></a>
+            <h3>Diets</h3>
+        </div-->
+    
+        <div class="card">
+            <a href="Nutritionk.html"><img src="kumapic/nutritionk.jpg" alt="nutrtion" height="150px" width="150px"></a>
+            <h3>Check for Deficiency</h3>
+        </div>
+        <div class="card">
+            <img src="kumapic/skink.jpg" alt="skincare" height="150px" width="150px">
+            <h3>Skincare</h3>
+        </div>
+        <div class="card">
+            <img src="kumapic/waterk.jpg" alt="Hydration" height="150px" width="150px">
+            <h3>Hydration</h3>
+        </div>
+        
+        </div>
+    
+
+</body>
+
+</html>

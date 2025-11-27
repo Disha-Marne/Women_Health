@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIYAMA - Kumarika</title>
+    <!--link rel="stylesheet" href="pubertyk.css"-->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<style>@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+    /* Reset styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      
+      /* Body */
+      body {
+        background-color: #f5e8dc;
+      }
+      
+      /* Navbar */
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+        background-color: #f5e8dc;
+        border-bottom: 2px solid #B07C56;
+      }
+      
+      /* Logo */
+      .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #5D4037;
+      }
+      
+      /* Search Bar */
+      .search-container {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 20px;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+      }
+      
+      .search-container i {
+        color: #5D4037;
+        margin-right: 5px;
+      }
+      
+      .search-container input {
+        border: none;
+        outline: none;
+        background: none;
+      }
+      
+      /* Navbar Links */
+      .nav-links {
+        display: flex;
+        gap: 20px;
+        background-color: #B07C56;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+      
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      .puberty-section {
+        width: 90%;
+        margin: 40px auto;
+        text-align: center;
+    }
+    
+    .title {
+        font-size: 28px;
+        color: #7d3a00;
+        font-weight: bold;
+    }
+    
+    .description {
+        font-size: 18px;
+        max-width: 800px;
+        margin: 20px auto;
+        line-height: 1.5;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    
+    .sign-box {
+        position: relative;
+        background: rgba(240, 240, 240, 0.8);
+        padding: 30px 40px;
+        border-radius: 20px;
+        text-align: center;
+        display: inline-block;
+        width: 80%;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    
+    /* Left Circle */
+    .circle-left, .circle-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #ddd;
+    }
+    
+    /* Left and Right Positioning */
+    .circle-left {
+        left: -60px;
+    }
+    
+    .circle-right {
+        right: -60px;
+    }
+    
+    .circle-left img,
+    .circle-right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .right-section {
+        width: 35%;
+        text-align: center;
+    }
+    .girl-image {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .puberty-growth {
+      padding: 20px;
+      background: #f5e8d6;
+      text-align: left;
+    }
+    
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .growth-content {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .left-growth, .right-growth {
+      width: 48%;
+    }
+    
+    .left-growth ul, .right-growth ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .left-growth li, .right-growth li {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    
+    .manage-title {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    
+    .manage-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    
+    .manage-box {
+      width: 180px;
+      text-align: center;
+      background: #e6b592;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .manage-box img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    
+    .manage-box p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    </style>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="#">COMMUNITY</a>
+            <a href="#">CONTACT US</a>
+        </nav>
+    </header>
+    <section class="puberty-section">
+        <h2 class="title">Early Puberty and Growth Issues</h2>
+        <p class="description">
+            Early puberty, also called precocious puberty, happens when a girl's body starts showing signs of puberty before age 8. 
+            Normally, puberty starts between ages 9-14, but some girls experience it earlier due to hormonal imbalances, genetics, 
+            or environmental factors.
+        </p>
+    <div class="container">
+    <h2>Signs of Early Puberty</h2>
+
+    <div class="sign-box">
+        <div class="circle-left">
+            <img src="kumapic/heightk.jpg" alt="Left Icon">
+        </div>
+        Breast Development and Growth Spurts
+        
+    </div>
+
+    <div class="sign-box">
+        Body Odor due to Excess Sweat
+        <div class="circle-right">
+            <img src="kumapic/body_odork.jpg" alt="Right Icon">
+        </div>
+    </div>
+
+    <div class="sign-box">
+        <div class="circle-left">
+            <img src="kumapic/mood_swingsk.jpg" alt="Left Icon">
+        </div>
+        Mood Swings
+        
+    </div>
+
+    <div class="sign-box">
+        
+        Acne and Oily Skin Issues
+        <div class="circle-right">
+            <img src="kumapic/skink.jpg" alt="Right Icon">
+        </div>
+    </div>
+    
+    <div class="right-section">
+        <img src="kumapic/girlk.jpg" alt="Girl Image" class="girl-image">
+    </div>
+</div>
+
+
+</section>
+
+</div>
+<section class="puberty-growth">
+    <h2 class="title">What Affects Puberty & Growth?</h2>
+    <div class="growth-content">
+        <div class="left-growth">
+            <ul>
+                <li><strong>Hormones</strong>
+                    <p>Puberty is triggered by estrogen and other hormones that affect body growth. If these hormones are released early, a girl may grow faster initially but stop growing sooner, leading to a shorter adult height.</p>
+                </li>
+                <li><strong>Genetics</strong>
+                    <p>If a mother had early puberty, her daughter might experience the same. However, lifestyle and diet can also play a role.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-growth">
+            <ul>
+                <li><strong>Diet & Nutrition</strong>
+                    <p>Unhealthy diets high in processed foods, sugar, and fats can lead to obesity, which is linked to early puberty.</p>
+                </li>
+                <li><strong>Environmental Factors</strong>
+                    <p>Endocrine-disrupting chemicals (EDCs) in plastics, cosmetics, and food packaging can interfere with hormones.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 class="manage-title">Managing Early Puberty & Supporting Healthy Growth</h3>
+    <div class="manage-container">
+        <div class="manage-box">
+            <a href="exerpubertyk.html" class="no-style">
+            
+                    <img src="kumapic/dietk.jpg" alt="Diets & Exercises"></a>
+                    
+            <p><strong>Diets & Exercises</strong></p>
+          
+        </div>
+        <div class="manage-box">
+            <img src="kumapic/sleepk.jpg" alt="Good Sleep and Avoid Stress">
+            <p><strong>Good Sleep and avoid stress</strong></p>
+        </div>
+        <div class="manage-box">
+            <img src="kumapic/junkk.avif" alt="Avoid Junk Food and Sugar">
+            <p><strong>Avoid junk food and sugar</strong></p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hormonal Shift and Perimenopause</title>
+
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #7E9AAA;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E3A1E;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(242, 229, 229);
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 15px;
+  }
+
+  .search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .nav-links a:hover {
+    background-color: #345B34;
+  }
+
+  .content {
+    padding: 0px 30px;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+
+  .search-bar {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  .content h2 {
+    color: #706641;
+    font-weight: bold;
+  }
+
+  .content ul {
+    padding: 10px;
+    max-width: 70%;
+    font-size: 18px;
+  }
+
+  .content li {
+    margin-bottom: 10px;
+  }
+
+  .content li strong {
+    font-weight: bold;
+  }
+
+  .image {
+    float: right;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .card {
+    flex: 1;
+    min-width: 150px;
+    max-width: 250px;
+    text-align: center;
+    background-color: #013220;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+</style>
+
+<body>
+  <header class="navbar">
+    <div class="logo">NIYAMA</div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
+    </div>
+    <nav class="nav-links">
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="community.html">COMMUNITY</a>
+      <a href="contact.html">CONTACT US</a>
+    </nav>
+  </header>
+  <div class="content">
+    <h2>SKIN AND HAIR CHANGES </h2>
+    <img src="images/hair.png" alt="Woman experiencing symptoms" class="image">
+    <ol>
+      <li>
+        <b>Acne & Oily Skin</b>
+        <ul>
+          <li><strong>PCOS: </strong>
+            High androgen (male hormone) levels cause excess oil production, leading to persistent acne (especially on
+            the jawline, chin, and cheeks).</li>
+          <li><strong>Menstrual Cycle:</strong>
+            Some women experience cyclical breakouts before their period due to progesterone and estrogen dips.</li>
+          <li><strong>Perimenopause:</strong>
+            Fluctuating hormones may cause adult-onset acne, even in women who never had acne before.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Dryness & Sensitivity</strong>
+        <ul>
+          <li><strong>Menopause: </strong>
+            Low estrogen reduces collagen and oil production, making skin dry, thin, and more prone to irritation.</li>
+          <li><strong>PCOS:</strong>
+            Insulin resistance can lead to patchy, dull skin.
+          </li>
+
+        </ul>
+      </li>
+      <li>
+        <strong>Hyperpigmentation & Dark Spots</strong>
+        <ul>
+          <li>
+            <strong>PCOS & Insulin Resistance:</strong>
+            PCOS & Insulin Resistance:
+          </li>
+          <li><strong> Sun Sensitivity (Menopause): </strong>
+            Estrogen decline reduces skin protection, making it more prone to sunspots and melasma.
+          </li>
+
+        </ul>
+      </li>
+      <li>
+        <strong>Hair Thinning & Hair Loss</strong>
+        <ul>
+          <li><strong>Menopause & Perimenopause: </strong>
+            Lower estrogen levels lead to weaker hair follicles, causing hair thinning, receding hairline, and reduced
+            volume.</li>
+          <li><strong>PCOS:</strong>
+            High androgen levels trigger hair loss at the crown and temples.
+          </li>
+
+        </ul>
+      </li>
+      <li>
+        <strong>Excess Facial & Body Hair</strong>
+        <ul>
+          <li>
+            High androgens (PCOS) cause thick, coarse hair to grow on the chin, upper lip, chest, and back.
+          </li>
+
+        </ul>
+      </li>
+      <li>
+        <strong>Brittle & Dry Hair</strong>
+        <ul>
+          <li>
+            Estrogen decline (Menopause) leads to weaker, brittle strands prone to breakage.
+          </li>
+
+        </ul>
+      </li>
+    </ol>
+  </div>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <a href="skins.html"><img src="images/hair.jpg" alt="Symptoms"></a>
+      <h3>Symptoms</h3>
+    </div>
+    <div class="card">
+      <a href="eskins.html"><img src="images/Exercise.png" alt="Exercise"></a>
+      <h3>Exercise</h3>
+    </div>
+    <div class="card">
+      <a href="dskins.html"><img src="images/diet.jpg" alt="Diet"></a>
+      <h3>Diet</h3>
+    </div>
+  </div>
+</body>
+
+</html>

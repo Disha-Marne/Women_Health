@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hormonal Shift and Perimenopause</title>
+
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #7E9AAA;
+    color: black;
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E3A1E;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(242, 229, 229);
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 15px;
+  }
+
+  .search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .nav-links a:hover {
+    background-color: #345B34;
+  }
+
+  .content {
+    padding: 60px 30px;
+  }
+
+  .container {
+    width: 80%;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+
+  .search-bar {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  .content h2 {
+    color: #706641;
+    font-weight: bold;
+  }
+
+  .container h2 {
+    color: black;
+    font-size: 20px;
+  }
+
+
+  .container p {
+    margin-bottom: 20px;
+  }
+
+
+  .image {
+    position: relative;
+    top: 100px;
+    left: 10px;
+    float: right;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+  }
+
+  .managing-periods {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .managing-periods h2 {
+    font-family: 'Oregano', cursive;
+    font-size: 24px;
+    color: #582308;
+    margin-bottom: 20px;
+  }
+
+  .periods-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  .period-item {
+    text-align: center;
+  }
+
+  .period-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .period-item p {
+    font-family: 'Oregano', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000;
+  }
+</style>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">NIYAMA</div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
+    </div>
+    <nav class="nav-links">
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="community.html">COMMUNITY</a>
+      <a href="contact.html">CONTACT US</a>
+    </nav>
+  </header>
+  <div class="content">
+    <h2>MENTAL HEALTH PROBLEMS</h2>
+    <img src="images/mental-health.jpg" alt="Woman experiencing symptoms" class="image">
+    <div class="container">
+      <h2>1. Depression & Anxiety</h2>
+      <p>Estrogen fluctuations (in menopause, PCOS, and menstruation) affect serotonin and dopamine, increasing the risk
+        of depression and anxiety.</p>
+      <p>PCOS-related insulin resistance may contribute to mood instability and stress.</p>
+      <p>Women with PMDD (severe PMS) experience intense mood swings and emotional distress.</p>
+
+      <h2>2. Irritability & Mood Swings</h2>
+      <p>Hormonal shifts cause emotional highs and lows.</p>
+      <p>Perimenopause & PCOS amplify irritability, making daily stress harder to handle.</p>
+
+      <h2>3. Brain Fog & Memory Issues</h2>
+      <p>Low estrogen levels in menopause lead to forgetfulness, difficulty concentrating, and mental fatigue.</p>
+      <p>PCOS-related insulin resistance may also affect cognitive function.</p>
+
+      <h2>4. Sleep Disorders & Fatigue</h2>
+      <p>Insomnia, night sweats (menopause), and irregular cycles (PCOS) disrupt sleep.</p>
+      <p>Poor sleep worsens anxiety, depression, and brain fog.</p>
+
+      <h2>5. Body Image & Self-Esteem Issues</h2>
+      <p>Weight gain, acne, hair loss, and excess hair growth (common in PCOS and menopause) impact confidence.</p>
+      <p>Aging changes (menopause) and bloating (menstruation) may worsen self-perception.</p>
+
+      <h2>6. Disordered Eating & Cravings</h2>
+      <p>Insulin resistance (PCOS) leads to uncontrollable cravings and risk of binge eating.</p>
+      <p>Emotional eating is common due to hormonal mood swings.</p>
+    </div>
+  </div>
+
+  <section class="managing-periods">
+    <div class="periods-container">
+      <div class="period-item">
+        <img src="images/diet.jpg" alt="Diets">
+        <p>Diets</p></a>
+      </div>
+
+      <div class="period-item">
+        <img src="images/Exercise.png" alt="Exercise"></a>
+        <h3>Exercises</h3>
+      </div>
+      <div class="period-item">
+        <img src="images/dance.jpeg" alt="dance">
+        <p>Dance & Music</p>
+      </div>
+      <div class="period-item">
+        <img src="images/talk.jpg" alt="Talk">
+        <p>Social Connections</p>
+      </div>
+      <div class="period-item">
+        <img src="images/journal.jpg" alt="Journal">
+        <p>Journaling</p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

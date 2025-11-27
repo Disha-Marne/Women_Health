@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="stylepe.css"-->
+    <title>Hormonal Shift and Perimenopause</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7E9AAA;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1E3A1E;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(242, 229, 229);
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #345B34;
+        }
+
+        nav ul li a:hover {
+            color: #ffbb00;
+        }
+
+        .content {
+            padding: 20px 10px;
+            width: 80%;
+            margin: 0px 30px;
+        }
+
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            background: black;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        .search-bar {
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .content h2 {
+            color: #706641;
+            font-weight: bold;
+        }
+
+        .content ul {
+            padding: 20px;
+            max-width: 70%;
+            font-size: 18px;
+        }
+
+        .content li {
+            margin-bottom: 20px;
+        }
+
+        .content li strong {
+            font-weight: bold;
+        }
+
+        .image {
+            position: absolute;
+            top: 200px;
+            right: 20px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 30px;
+        }
+
+        .info {
+            margin-right: 220px;
+            font-size: 18px;
+            margin-top: 40px;
+        }
+
+        .title {
+            font-size: 18px;
+        }
+
+        figure {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            text-align: center;
+        }
+
+        figcaption {
+            color: #000;
+            padding: 10px;
+            font-size: 16px;
+            font-family: "Noto Sans", sans-serif;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .images img {
+            height: 100px;
+            transition: transform 0.3s ease;
+        }
+
+        .images:hover img {
+            transform: scale(1.2);
+        }
+
+        .index-symptom {
+            margin: 0px 50px;
+            font-size: 18px;
+        }
+
+        h4 {
+            margin-top: 0px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="community.html">COMMUNITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    <div class="container">
+
+    </div>
+    <div class="content">
+        <h2>HORMONAL SHIFT AND PERIMENOPAUSE</h2>
+        <img src="images/hormonal.jpg" alt="Woman experiencing symptoms" class="image">
+
+        <p class="info">
+            Perimenopause is the transitional phase before menopause, typically occurring in women in their 40s but
+            sometimes starting in their late 30s. It can last anywhere from a few years to over a decade. During this
+            phase, the ovaries gradually produce less estrogen, leading to irregular menstrual cycles and various
+            physical and emotional symptoms. Once a woman goes 12 consecutive months without a period, she is considered
+            to have reached menopause.
+        </p>
+
+        <b class="title">Hormonal Changes During Perimenopause</b>
+        <ul>
+            <li><strong>Declining Estrogen Levels:</strong> The primary hormonal shift, leading to irregular periods,
+                mood swings, and changes in skin and metabolism.
+            </li>
+            <li><strong>Fluctuations in Progesterone:</strong> Can cause sleep disturbances, anxiety, and heavier or
+                lighter periods.
+            </li>
+            <li><strong>Changes in Testosterone:</strong> May lead to reduced libido, fatigue, and muscle mass loss.
+            </li>
+            <li><strong>Increased Cortisol Sensitivity:</strong> Heightened stress response, leading to weight gain and
+                anxiety.
+            </li>
+            <li><strong>Insulin Resistance:</strong> Some women may experience blood sugar fluctuations, increasing the
+                risk of weight gain and metabolic issues.</li>
+        </ul>
+    </div>
+
+    <div class="index-symptom">
+        <h4>Symptoms</h4>
+        Menopause brings a significant transition in women that can bring a range of symptoms, although the experience
+        can vary widely from person to person. Here are some common symptoms associated with menopause: <br><br>
+    </div>
+
+    <figure>
+        <div class="images">
+            <a href="hotflashes.html">
+                <img id="hotflashes" src="logo/hotflashes.webp">
+                <figcaption>Hot Flashes</figcaption>
+            </a>
+        </div>
+        <div class="images">
+            <a href="anxietys.html">
+                <img id="anxiety" src="logo/anxiety.webp">
+                <figcaption>Anxiety</figcaption>
+            </a>
+        </div>
+        <div class="images">
+            <a href="brainfogs.html">
+                <img id="brainfog" src="logo/brainfog.webp">
+                <figcaption>Brainfog</figcaption>
+            </a>
+        </div>
+        <div class="images">
+            <a href="drynesss.html">
+                <img id="dryness" src="logo/dryness.webp">
+                <figcaption>Vaginal<br> Dryness</figcaption>
+            </a>
+        </div>
+        <div class="images">
+            <a href="insomnias.html">
+                <img id="insomnia" src="logo/insomnia.webp">
+                <figcaption>Insomnia</figcaption>
+            </a>
+        </div>
+        <div class="images">
+            <a href="moods.html">
+                <img id="mood" src="logo/mood.webp">
+                <figcaption>Mood Swings</figcaption>
+            </a>
+        </div>
+        <div class="images">
+            <a href="nightsweatss.html">
+                <img id="nightsweats" src="logo/nightsweats.webp">
+                <figcaption>Night<br> Sweats</figcaption>
+            </a>
+        </div>
+        <div class="images">
+            <a href="osteoporosiss.html">
+                <img id="osteoporosis" src="logo/osteoporosis.webp">
+                <figcaption>Osteoporosis</figcaption>
+            </a>
+        </div>
+        <div class="images">
+            <a href="stress.html">
+                <img id="stress" src="logo/stress.webp">
+                <figcaption>Stress</figcaption>
+            </a>
+        </div>
+
+    </figure>
+    </div>
+    <footer>
+        <p>&copy; 2025 NIYAMA. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

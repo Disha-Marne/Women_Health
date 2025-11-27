@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Management Exercises</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f4f7f9;
+    color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(120deg, #004d7a, #008793);
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Exercise Sections */
+.exercise-section {
+    margin: 40px 0;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-section h2 {
+    color: #005f73;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Exercise Container */
+.exercise-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.exercise-card {
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.exercise-card:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.exercise-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.exercise-card h3 {
+    color: #0277bd;
+    font-size: 18px;
+}
+
+.exercise-card p {
+    font-size: 14px;
+}
+
+/* Exercises to Avoid */
+.avoid {
+    background: #fbe9e7;
+}
+
+.avoid-card {
+    background: #ffcdd2;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background: #008793;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .exercise-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .exercise-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>Weight Management Exercises</h1>
+        <p>Stay fit and balanced with the right workout routine.</p>
+    </header>
+
+    <section class="exercise-section">
+        <h2>Best Exercises for Weight Management</h2>
+        <div class="exercise-container">
+            <div class="exercise-card">
+                <img src="exercises/HIIT.jpg" alt="HIIT Workouts">
+                <h3>HIIT Workouts</h3>
+                <p>High-intensity interval training burns calories and boosts metabolism.</p>
+            </div>
+            <div class="exercise-card">
+                <img src="exercises/heavy_lifting.avif" alt="Strength Training">
+                <h3>Strength Training</h3>
+                <p>Builds muscle mass and promotes long-term fat loss.</p>
+            </div>
+            <div class="exercise-card">
+                <img src="exercises/yoga.png" alt="Yoga">
+                <h3>Yoga</h3>
+                <p>Balances hormones and reduces stress-related weight gain.</p>
+            </div>
+            <div class="exercise-card">
+                <img src="exercises/brisk.jpg" alt="Brisk Walking">
+                <h3>Brisk Walking</h3>
+                <p>Improves cardiovascular health and aids weight control.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="exercise-section avoid">
+        <h2>Exercises to Avoid</h2>
+        <div class="exercise-container">
+            <div class="exercise-card avoid-card">
+                <img src="exercises/heavy_lifting.avif" alt="Overtraining">
+                <h3>Overtraining</h3>
+                <p>Can cause fatigue, hormonal imbalance, and muscle breakdown.</p>
+            </div>
+            <div class="exercise-card avoid-card">
+                <img src="exercises/extreme-dieting.jpg" alt="Extreme Dieting">
+                <h3>Extreme Dieting</h3>
+                <p>Leads to muscle loss, slower metabolism, and nutrient deficiency.</p>
+            </div>
+            <div class="exercise-card avoid-card">
+                <img src="exercises/high_cardio.jpg" alt="Excessive Cardio">
+                <h3>Excessive Cardio</h3>
+                <p>Can elevate stress hormones and disrupt muscle growth.</p>
+            </div>
+            <div class="exercise-card avoid-card">
+                <img src="exercises/spot-reduction.jpg" alt="Spot Reduction Exercises">
+                <h3>Spot Reduction Workouts</h3>
+                <p>Localized fat loss is a myth; focus on full-body workouts.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Stay active and achieve a healthy weight with balanced exercises.</p>
+    </footer>
+
+</body>
+</html>

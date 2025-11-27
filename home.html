@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIYAMA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #71938d;
+            /*padding: 10px 15px;*/
+        }
+.symptom2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0px;
+            text-align:center;
+            font-size: 35px;
+        }
+
+        .sym2-1 {
+            flex: 1 1 200px;
+            margin: 10px;
+            background-color: #47615b;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 5px 8px #3b4d49;
+        }
+   .age{
+   flex: 1 1 20px;
+            margin: 8px;
+            background-color: #3b4d49;
+            padding: 5px;
+            border-radius: 5px;
+            color: rgb(242, 229, 229);
+   }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1E3A1E;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(242, 229, 229);
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #345B34;
+        }
+
+        .search-container {
+            display: flex;
+        }
+
+        .search-container input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            background: #555;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        input[type="text"] {
+            margin-top: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+        /*.hero {
+            background-color: #34495e;
+            color: white;
+            padding: 25px 10px;
+            font-size: 30px;
+            align: center;
+        }*/
+        .categories a {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.categories a:hover {
+    transform: scale(1.05);
+}
+
+        .categories {
+            display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+        }
+        .category {
+            background-color: #e5e6e9;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+            
+        }
+        .category img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="community.html">COMMUNITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    <br>
+    
+    <div class="symptom2 " >
+    <div class="sym2-1 ">
+        “It doesn’t get <strong>EASIER</strong>, You get <strong>BETTER</strong>...”
+    </div>
+    </div>
+    <br><br>
+    <section class="categories">
+        <a href="kumarika.html" class="category">
+            <img src="pic/kumarika.png" alt="Kumarika" height="150px" width="150px">
+            <h3>KUMARIKA</h3>
+            <p class="age">10-15</p>
+        </a>
+        <a href="taruni.html" class="category">
+            <img src="pic/taruni1.png" alt="Taruni">
+            <h3>TARUNI</h3>
+            <p class="age">15-20</p>
+        </a>
+        <a href="vayasaka.html" class="category">
+            <img src="pic/vayasaka.png" alt="Vayasaka">
+            <h3>VAYASAKA</h3>
+            <p class="age">21-35</p>
+        </a>
+        <a href="sandhya.html" class="category">
+            <img src="pic/sandya.png" alt="Sandhya" height="150px" width="150px">
+            <h3>SANDHYA</h3>
+            <p class="age">35-45</p>
+        </a>
+        <a href="vayovrddha.html" class="category">
+            <img src="pic/vayovrddha.png" alt="Vayovrddha" height="150px" width="150px">
+            <h3>VAYOVRDDHA</h3>
+            <p class="age">45-65</p>
+        </a>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2025 NIYAMA. All rights reserved.</p>
+    </footer>
+</body>
+</html>

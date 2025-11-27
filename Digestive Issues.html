@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIYAMA - Digestive Issues & Malnutrition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dde4df;
+            padding: 10px 15px;
+        }
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E3A1E;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(242, 229,  229);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #345B34;
+}
+
+.search-container {
+    display: flex;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+        .container {
+            padding: 20px;
+        }
+    
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .image-box img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .text-box {
+            flex: 1;
+            min-width: 300px;
+        }
+        .text-box h2 {
+            color: #3d1d10;
+        }
+        .text-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .text-box ul li {
+            margin: 10px 0;
+        }
+        
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .card {
+            flex: 1;
+            min-width: 150px;
+            max-width: 250px;
+            text-align: center;
+            background-color: #013220;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .search-bar {
+                order: -1;
+                margin-bottom: 10px;
+            }
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .symptom2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .sym2-1 {
+            flex: 1 1 200px;
+            margin: 10px;
+            background-color: #f6f1e0;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 5px 8px #132018;
+        }
+
+    </style>
+    <script>
+        function searchFunction() {
+            let input = document.getElementById("search-input").value.toLowerCase();
+            let elements = document.querySelectorAll(".container h1, .text-box ul li, .card h3");
+            
+            elements.forEach(el => {
+                if (el.textContent.toLowerCase().includes(input)) {
+                    el.style.display = "block";
+                } else {
+                    el.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="community.html">COMMUNITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        
+        <div class="symptom2">
+            <div class="sym2-1"><h1>Digestive Issues & Malnutrition</h1> As Women age, the digestive system slows down, leading to problems such as constipation, acid reflux, bloating, and poor nutrient absorption. Additionally, factors like
+                 reduced appetite, dental issues, and chronic illnesses can contribute to malnutrition, weakening immunity and overall health. Ensuring a balanced diet, proper hydration, and digestive-friendly habits can help maintain gut health and prevent complications.</div></div>
+        <div class="content">
+            <div class="image-box">
+                <br><br><br><br><br><br><img src="picvo/digestive issues image.jpg" >
+            </div>
+            <div class="text-box">
+                <h2>Common Digestive Issues</h2>
+                <div class="symptom2">
+                    <div class="sym2-1">
+                <ul style="list-style-type:disc;">
+                    <li><strong>Constipation & Slow Digestion
+                    </strong>- Aging reduces bowel movement efficiency, causing difficulty in passing stool.
+
+                    Low fiber intake, dehydration, and lack of physical activity worsen the condition.
+                    
+                    Symptoms: Hard stools, bloating, stomach discomfort, and infrequent bowel movements.</li>
+                    <li><strong>Acid Reflux & Heartburn (Gastroesophageal Reflux Disease - GERD)</strong> – The lower esophageal sphincter weakens with age, allowing stomach acid to flow back into the esophagus.
+
+                        Triggered by spicy foods, caffeine, overeating, and lying down after meals.
+                        
+                        Symptoms: Burning sensation in the chest, sour taste in the mouth, and indigestion.</li>
+                    <li><strong> Poor Nutrient Absorption (Malabsorption Syndrome)</strong> – The body absorbs fewer vitamins and minerals, leading to deficiencies in calcium, iron, B12, and vitamin D.
+
+                        Can cause weak bones, fatigue, and anemia.</li>
+                    <li><strong>Loss of Appetite & Weight Loss</strong> - Aging, medication side effects, or loneliness can lead to reduced food intake.
+
+                        Lack of proper nutrition weakens immunity and muscle strength.</li>
+                        <li><strong>Bloating & Gas</strong> - Caused by slower digestion, food intolerances, and gut bacteria imbalance.
+
+                            Can lead to stomach discomfort and excessive gas.</li>                
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-box">
+            <h2>Ways to Maintain Digestive Health & Prevent Malnutrition</h2>
+            <div class="symptom2">
+                <div class="sym2-1">
+            <ul style="list-style-type:disc;">
+                <li><strong>Eat Fiber-Rich Foods</strong> – Whole grains, fruits, and vegetables improve digestion and prevent constipation.</li>
+                <li><strong>Stay Hydrated</strong> –  Drinking enough water helps soften stools and aids digestion.</li>
+                <li><strong> Consume Probiotics</strong> – Yogurt, buttermilk, and fermented foods support gut bacteria balance.</li>
+                <li><strong>Eat Smaller, Frequent Meals</strong>-Helps with nutrient absorption and prevents bloating.</li>
+                <li><strong>Monitor Nutrient Deficiencies</strong>-Regular health check-ups help detect vitamin B12, iron, and calcium deficiencies.</li>
+            </ul>
+            </div>
+            </div>
+        </div>
+    </div>

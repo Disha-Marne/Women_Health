@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin & Hair Problems - Symptoms & Prevention</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #F5F7FA;
+    color: #2C3E50;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(120deg, #001F3F, #005F73);
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Sections */
+.symptoms-section {
+    margin: 40px 0;
+    padding: 25px;
+    background: #E8F1F2; /* Light Blue */
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.prevention-section {
+    margin: 40px 0;
+    padding: 25px;
+    background: #F4E8D7; /* Light Beige */
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.symptoms-section h2, .prevention-section h2 {
+    color: #001F3F;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Grid Containers */
+.symptom-container, .prevention-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Cards */
+.symptom-card {
+    background: #C5DFF8; /* Soft Blue */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.prevention-card {
+    background: #FFD6A5; /* Soft Orange */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.symptom-card:hover, .prevention-card:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.symptom-card h3 {
+    color: #005F73;
+    font-size: 18px;
+}
+
+.prevention-card h3 {
+    color: #A64B00;
+    font-size: 18px;
+}
+
+.symptom-card p, .prevention-card p {
+    font-size: 14px;
+    color: #3D5467;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background: #001F3F;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .symptom-container, .prevention-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .symptom-container, .prevention-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>Skin & Hair Problems</h1>
+        <p>Understanding symptoms and preventive measures for healthy skin and hair.</p>
+    </header>
+
+    <section class="symptoms-section">
+        <h2>Symptoms of Skin & Hair Problems</h2>
+        <div class="symptom-container">
+            <div class="symptom-card">
+                <h3>Acne & Breakouts</h3>
+                <p>Excessive oil production and clogged pores causing inflammation.</p>
+            </div>
+            <div class="symptom-card">
+                <h3>Dry & Itchy Skin</h3>
+                <p>Dehydration and lack of essential nutrients in the skin.</p>
+            </div>
+            <div class="symptom-card">
+                <h3>Hair Thinning & Hair Loss</h3>
+                <p>Poor scalp health and hormonal imbalances leading to hair fall.</p>
+            </div>
+            <div class="symptom-card">
+                <h3>Dandruff & Scalp Issues</h3>
+                <p>Flaking and irritation due to dryness or fungal infections.</p>
+            </div>
+            <div class="symptom-card">
+                <h3>Dark Circles & Puffiness</h3>
+                <p>Lack of sleep, stress, or dehydration affecting under-eye skin.</p>
+            </div>
+            <div class="symptom-card">
+                <h3>Premature Aging</h3>
+                <p>Fine lines, wrinkles, and sagging due to collagen loss.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="prevention-section">
+        <h2>Preventive Measures</h2>
+        <div class="prevention-container">
+            <div class="prevention-card">
+                <h3>Hydration</h3>
+                <p>Drink plenty of water to keep skin and hair nourished.</p>
+            </div>
+            <div class="prevention-card">
+                <h3>Healthy Diet</h3>
+                <p>Consume vitamins and omega-3-rich foods for better skin and hair.</p>
+            </div>
+            <div class="prevention-card">
+                <h3>Gentle Skincare Routine</h3>
+                <p>Use mild, chemical-free products to avoid irritation.</p>
+            </div>
+            <div class="prevention-card">
+                <h3>Hair & Scalp Care</h3>
+                <p>Use natural oils and avoid excessive heat styling.</p>
+            </div>
+            <div class="prevention-card">
+                <h3>Adequate Sleep</h3>
+                <p>Resting well ensures better skin repair and hair growth.</p>
+            </div>
+            <div class="prevention-card">
+                <h3>Manage Stress</h3>
+                <p>Practice yoga and meditation to prevent stress-related issues.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Healthy skin and hair require consistent care and a balanced lifestyle.</p>
+    </footer>
+
+</body>
+</html>

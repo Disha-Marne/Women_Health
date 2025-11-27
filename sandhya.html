@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIYAMA</title>
+  <!--link rel="stylesheet" href="styles.css"-->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #88a9b9;
+      color: #fdf6f6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1E3A1E;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: rgb(242, 229, 229);
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: white;
+      padding: 5px;
+      border-radius: 15px;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      padding: 5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #345B34;
+    }
+
+    .search-container {
+      display: flex;
+    }
+
+    .search-container input {
+      padding: 7px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      width: 200px;
+    }
+
+    .search-container button {
+      background: #555;
+      color: white;
+      border: none;
+      padding: 7px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .search-container button:hover {
+      background-color: #333;
+    }
+
+    .icons i {
+      font-size: 20px;
+      margin-left: 20px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      padding: 80px 20px 20px;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero img {
+      height: 300px;
+      width: 250px;
+      border-radius: 20px 20px;
+      margin-bottom: 10px;
+      padding-top: 50px;
+    }
+
+    .hero-text h2 {
+      font-size: 30px;
+      color: #000000;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #333;
+    }
+
+    .health-issues {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .issue {
+      background-color: #132c1b;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: normal;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .issue:hover {
+      transform: scale(1.03);
+      background-color: #2b513d;
+    }
+
+    .issue img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .issue p {
+      font-size: 16px;
+      margin-top: 10px;
+      font-weight: normal;
+    }
+
+    @media (max-width: 1050px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px 30px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .health-issues {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .health-issues {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .health-issues {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .hero img {
+        height: 200px;
+        width: 200px;
+      }
+
+      .hero-text h2 {
+        font-size: 24px;
+      }
+
+      .hero-text p {
+        font-size: 16px;
+        max-width: 100%;
+      }
+
+      .search-container input {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">NIYAMA</div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
+    </div>
+    <nav class="nav-links">
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="community.html">COMMUNITY</a>
+      <a href="contact.html">CONTACT US</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/sandhya.png" alt="Woman">
+      <div class="hero-text">
+        <h2>SANDHYA</h2>
+        <p>"You stand at the perfect balance of wisdom and ambition, embracing life with confidence and grace. Keep
+          growing, keep glowing, your best chapters are still unfolding!"</p>
+      </div>
+    </section>
+
+    <section class="health-issues">
+      <a href="perimenopauses.html" class="issue"><img src="images/hormonal.jpg" alt="abc" height="100px">
+        <p>Hormonal Shift &
+          Perimenopause</p>
+      </a>
+      <a href="pcospcods.html" class="issue"><img src="images/pcos.jpg" height="100px" alt="">
+        <p>PCOS / PCOD</p>
+      </a>
+      <a href="sleeps.html" class="issue"><img src="images/sleep-disruption.jpg" alt="abc">
+        <p>Sleep
+          Disruption</p>
+      </a>
+      <a href="skinhairs.html" class="issue"><img src="images/hair.png" alt="">
+        <p>Skin & Hair
+          Problems</p>
+      </a>
+    </section>
+    <section class="health-issues">
+      <a href="weights.html" class="issue"><img src="images/weight.png" alt="">
+        <p>Weight
+          Changes</p>
+      </a>
+      <a href="bones.html" class="issue"><img src="images/bone.jpg" alt="">
+        <p>Bone Density & Joint Health</p>
+      </a>
+      <a href="mentalhealths.html" class="issue"><img src="images/mental-health.jpg" alt="">
+        <p>Mental
+          Health </p>
+      </a>
+      <!--a href="diet and exercise/diet.html" class="issue"><img src="images/diet.png" alt=""><p>Diet and
+              Exercise </p></a-->
+    </section>
+  </main>
+
+</body>
+
+</html>

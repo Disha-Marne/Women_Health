@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menstrual Health Guide</title>
+    <style>
+        /* Reset Defaults */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f5e6cc; /* Light Beige */
+            color: #4d3319; /* Dark Brown */
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(120deg, #8c5a2b, #5a3825); /* Brown Gradient */
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        header p {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* Sections */
+        .section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #fff3e6; /* Soft Beige */
+            border-radius: 12px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #7a4e2d; /* Medium Brown */
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        /* Containers */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .card {
+            background: #f5d7b8; /* Light Brown */
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #6b3e2e; /* Dark Brown */
+            font-size: 18px;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        /* Avoid Section */
+        .avoid {
+            background: #f4c7ab; /* Muted Coral */
+        }
+
+        .avoid-card {
+            background: #e6a78c; /* Soft Reddish-Brown */
+        }
+
+        /* Exercise Section (Different Background) */
+        .exercise-section {
+            background: #e6ccb2; /* Warmer Beige */
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            background: #5a3825; /* Dark Brown */
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌿 Hormonal Balance Guide</h1>
+        <p>Eat right to support your hormones naturally!</p>
+    </header>
+
+    <!-- Diet Section -->
+    <section class="section">
+        <h2>🍏 Hormonal Balance Diet Guide 🌸</h2>
+        <div class="container">
+            <div class="card">
+                <img src="kumapic/leafy_greensk.jpg" alt="Leafy Greens">
+                <h3>Leafy Greens</h3>
+                <p>Boosts iron levels, fights fatigue.</p>
+            </div>
+            <div class="card">
+                <img src="kumapic/nuts_seedsk.jpg" alt="Nuts and Seeds">
+                <h3>Nuts & Seeds</h3>
+                <p>Rich in Omega-3, reduces cramps.</p>
+            </div>
+            <div class="card">
+                <img src="kumapic/fruitsk.jpg" alt="Fruits">
+                <h3>Fruits</h3>
+                <p>Bananas & berries reduce bloating.</p>
+            </div>
+            <div class="card">
+                <img src="kumapic/chocolatek.jpg" alt="Dark Chocolate">
+                <h3>Dark Chocolate</h3>
+                <p>Boosts mood naturally.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foods to Avoid -->
+    <section class="section avoid">
+        <h2>❌ Foods to Avoid</h2>
+        <div class="container">
+            <div class="card avoid-card">
+                <img src="kumapic/teak.jpg" alt="Caffeine">
+                <h3>Caffeine</h3>
+                <p>Increases stress, worsens cramps.</p>
+            </div>
+            <div class="card avoid-card">
+                <img src="kumapic/junkk.avif" alt="Processed Foods">
+                <h3>Processed Foods</h3>
+                <p>Leads to bloating and discomfort.</p>
+            </div>
+            <div class="card avoid-card">
+                <img src="kumapic/sugark.jpeg" alt="Sugary Foods">
+                <h3>Refined Sugar</h3>
+                <p>Causes energy crashes.</p>
+            </div>
+            <div class="card avoid-card">
+                <img src="kumapic/alcoholk.jpg" alt="Alcohol">
+                <h3>Alcohol</h3>
+                <p>Raises cortisol levels, affecting metabolism & sleep.</p>
+            </div>
+            <div class="food-card avoid-card">
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise Section -->
+    <section class="section exercise-section">
+        <h2>🏋️‍♀️Exercises for Hormonal Balance</h2>
+        <p>Regulate hormones, reduce stress, and improve overall well-being.</p>
+        <div class="container">
+            <div class="card">
+                <img src="kumapic/strengthk.jpg" alt="Strength Training">
+                <h3>Strength Training</h3>
+                <p>Boosts growth hormones, improves metabolism, and enhances bone health.</p>
+            </div>
+            <div class="card">
+                <img src="kumapic/light_walkingk.jpg" alt="Light Walking">
+                <h3>Light Walking</h3>
+                <p>Boosts circulation & reduces bloating.</p>
+            </div>
+            <div class="card">
+                <img src="kumapic/gentle_yogak.jpg" alt="Gentle Yoga">
+                <h3>Yoga & meditation</h3>
+                <p>Reduces cortisol, improves sleep, and balances reproductive hormones</p>
+            </div>
+            <div class="card">
+                <img src="kumapic/cardiok.jpg" alt="Low-Impact Cardio">
+                <h3>Low-Impact Cardio</h3>
+                <p>Helps regulate estrogen levels, improves circulation, and reduces stress.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section avoid">
+        <h2>⚠️ Exercises to Avoid</h2>
+        <div class="container">
+            <div class="card avoid-card">
+                <img src="kuampic/heavy_liftingk.avif" alt="Heavy Weightlifting">
+                <h3>Heavy Weightlifting</h3>
+                <p>Can increase fatigue and worsen cramps.</p>
+            </div>
+            <div class="card avoid-card">
+                <img src="kumapic/intense_cardiok.webp" alt="High-Intensity Cardio">
+                <h3>High-Intensity Cardio</h3>
+                <p>May cause excess stress on the body during periods.</p>
+            </div>
+            <div class="card avoid-card">
+                <img src="kumapic/long_runningk.jpg" alt="Long Running">
+                <h3>Long-Distance Running</h3>
+                <p>Can deplete energy levels and lead to dizziness.</p>
+            </div>
+            <div class="card avoid-card">
+                <img src="kumapic/fastk.webp" alt="Excessive Fasting Workouts">
+                <h3>Excessive Fasting Workouts</h3>
+                <p>Can cause hormonal imbalances, leading to fatigue and low energy.</p>
+            </div>
+        </div>
+    </section>
+        </div>
+    </section>
+
+    <footer>
+        <p>✨ Listen to your body & stay healthy! ✨</p>
+    </footer>
+
+    </footer>
+
+</body>
+</html>

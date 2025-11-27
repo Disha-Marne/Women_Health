@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIYAMA - Sexual & Reproductive Health Concerns
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFE8EB;
+            padding: 10px 15px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1E3A1E;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(242, 229, 229);
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #345B34;
+        }
+
+        .search-container {
+            display: flex;
+        }
+
+        .search-container input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            background: #555;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .text-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .text-box h2 {
+            color: #3d1d10;
+        }
+
+        .text-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .text-box ul li {
+            margin: 10px 0;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card {
+            flex: 1;
+            min-width: 150px;
+            max-width: 250px;
+            text-align: center;
+            background-color: #013220;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .search-bar {
+                order: -1;
+                margin-bottom: 10px;
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+        }
+
+        .symptom2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .sym2-1 {
+            flex: 1 1 200px;
+            margin: 10px;
+            background-color: #faced5;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 5px 8px #f8d1d7;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="community.html">COMMUNITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    <br>
+    <div class="symptom2">
+        <div class="sym2-1"><h1>Sexual & Reproductive Health Concerns
+        </h1>
+        Sexual & reproductive health concerns include issues like low libido, painful intercourse, STIs, fertility problems, and menstrual disorders, often linked to hormones, infections, or lifestyle factors.
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="text-box">
+            <h3 align="center">Various Sexual & Reproductive Health Concern</h3>
+            <div class="symptom2">
+                <div class="sym2-1">
+            <ul style="list-style-type:disc;">
+                <li><span class="highlight"> Low Libido </span>  – Reduced sexual desire due to stress, hormones, or medical conditions.</li><br>
+                    <li><span class="highlight"> Painful Intercourse </span> – Can result from vaginal dryness, infections, or hormonal changes.</li><br>
+                    <li><span class="highlight"> Sexually Transmitted Infections (STIs)</span>  – Infections affecting reproductive health, requiring medical attention.</li><br>
+                    <li><span class="highlight"> Fertility Issues </span> – Difficulty conceiving due to hormonal, structural, or lifestyle factors.</li><br>
+                    <li><span class="highlight"> Menstrual Disorders  </span> – Irregular, painful, or heavy periods impacting overall health.</li>
+            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards">
+        
+        <div class="card">
+            <a href="exercise/sexual.html"><img src="pic/Exercise.png" alt="Exercise"></a>
+            <h3>Exercise</h3>
+        </div>
+        <div class="card">
+            <a href="diet/sexual.html"><img src="pic/diet.jpg" alt="Diet"></a>
+            <h3>Diet</h3>
+        </div>
+    </div>
+
+</body>
+
+</html>

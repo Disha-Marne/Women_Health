@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIYAMA - Diabetes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dde4df;
+            padding: 10px 15px;
+        }
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E3A1E;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(242, 229, 229);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #345B34;
+}
+
+.search-container {
+    display: flex;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+        .container {
+            padding: 20px;
+        }
+    
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .image-box img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .text-box {
+            flex: 1;
+            min-width: 300px;
+        }
+        .text-box h2 {
+            color: #3d1d10;
+        }
+        .text-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .text-box ul li {
+            margin: 10px 0;
+        }
+        
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .card {
+            flex: 1;
+            min-width: 150px;
+            max-width: 250px;
+            text-align: center;
+            background-color: #013220;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .search-bar {
+                order: -1;
+                margin-bottom: 10px;
+            }
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .symptom2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .sym2-1 {
+            flex: 1 1 200px;
+            margin: 10px;
+            background-color: #f6f1e0;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 5px 8px #132018;
+        }
+
+    </style>
+    <script>
+        function searchFunction() {
+            let input = document.getElementById("search-input").value.toLowerCase();
+            let elements = document.querySelectorAll(".container h1, .text-box ul li, .card h3");
+            
+            elements.forEach(el => {
+                if (el.textContent.toLowerCase().includes(input)) {
+                    el.style.display = "block";
+                } else {
+                    el.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="community.html">COMMUNITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        
+        <div class="symptom2">
+            <div class="sym2-1"><h1>Diabetes</h1>Diabetes is a common health concern in older adults, affecting the body's ability to regulate blood sugar levels. Aging slows down metabolism, reduces insulin sensitivity, and increases the risk of Type 2 diabetes. Uncontrolled diabetes can lead to serious complications like heart disease, nerve damage, kidney failure, and vision problems. However, with proper diet, medication, and lifestyle management, blood sugar levels can be controlled, ensuring a healthier life.</div></div>
+        <div class="content">
+            <div class="image-box">
+                <br><br><br><br><br><br><img src="" >
+            </div>
+            <div class="text-box">
+                <h2>Types of Diabetes</h2>
+                <div class="symptom2">
+                    <div class="sym2-1">
+                <ul style="list-style-type:disc;">
+                    <li><strong>Type 2 Diabetes (Most Common in Elderly)
+                    </strong> Occurs when the body does not use insulin properly, leading to high blood sugar.
+
+                    Often linked to obesity, poor diet, and a sedentary lifestyle.
+                    
+                    Can be managed with medication, diet, and exercise.</li>
+                    <li><strong>Type 1 Diabetes (Less Common in Elderly)
+                        </strong> – An autoimmune condition where the body stops producing insulin.
+
+                        Requires insulin injections for blood sugar control.</li>
+                    <li><strong> Prediabetes (Early Stage of Diabetes)</strong> – Blood sugar levels are higher than normal but not yet in the diabetes range.
+
+                        Can be reversed with lifestyle changes.</li>
+                    
+                        </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-box">
+            <h2>Symptoms of Diabetes </h2>
+            <div class="symptom2">
+                <div class="sym2-1">
+            <ul style="list-style-type:disc;">
+                <li><strong>Frequent urination and excessive thirst</strong> 
+                <li><strong>Unexplained weight loss or gain   
+                <li><strong> Fatigue and weakness.</strong>  
+                <li><strong>Blurred vision</strong>
+                <li><strong> Tingling or numbness in hands and feet (nerve damage)</strong>
+            </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-box">
+        <h2>Complications of Uncontrolled Diabetes</h2>
+        <div class="symptom2">
+            <div class="sym2-1">
+        <ul style="list-style-type:disc;">
+            <li><strong>Heart Disease & Stroke
+            </strong> High blood sugar damages blood vessels, increasing the risk of cardiovascular issues.</li>
+            <li><strong>Kidney Damage (Diabetic Nephropathy)
+                </strong> – Can lead to kidney failure if unmanaged.</li>
+            <li><strong>Nerve Damage (Neuropathy)</strong> – Causes numbness, pain, and weakness in the limbs.</li>
+            <li><strong>Eye Problems (Diabetic Retinopathy)</strong> – Can cause vision loss or blindness.</li>
+            <li><strong>Foot Ulcers & Infections</strong> – Poor circulation can lead to non-healing wounds, sometimes requiring amputation.</li>
+            
+        </ul>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="text-box">
+    <h2>Ways to Manage & Prevent Diabetes</h2>
+    <div class="symptom2">
+        <div class="sym2-1">
+    <ul style="list-style-type:disc;">
+        <li><strong>Eat a Balanced Diet
+        </strong> Focus on whole grains, fiber-rich foods, lean proteins, and healthy fats.</li>
+        <li><strong>Monitor Blood Sugar Levels
+            </strong> – Regular check-ups help track glucose levels and prevent complications.</li>
+        <li><strong>Exercise Regularly</strong> – Walking, yoga, and light workouts improve insulin sensitivity.</li>
+        <li><strong>Limit Sugar & Processed Foods</strong> – Avoid sweets, sodas, and high-carb meals.</li>
+        <li><strong>Take Medications as Prescribed</strong> – Insulin or diabetes pills must be taken regularly.</li>
+        
+    </ul>
+    </div>
+    </div>
+</div>
+</div>

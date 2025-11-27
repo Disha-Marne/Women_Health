@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIYAMA - Kumarika</title>
+    <!--link rel="stylesheet" href="hormones.css"-->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background-color: #f5e8dc;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #f5e8dc;
+    border-bottom: 2px solid #B07C56;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #5D4037;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-container i {
+    color: #5D4037;
+    margin-right: 5px;
+  }
+  
+  .search-container input {
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  /* Navbar Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    background-color: #B07C56;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+</style>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="community.html">COMMUNITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+
+    <style>
+       .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1E3A1E;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(242, 229, 229);
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #345B34;
+        }
+
+        .search-container {
+            display: flex;
+        }
+
+        .search-container input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            background: #555;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        input[type="text"] {
+            margin-top: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .text-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .text-box h2 {
+            color: #3d1d10;
+        }
+
+        .text-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .text-box ul li {
+            margin: 10px 0;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card {
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+             text-align: center;
+            background-color: #b47d5e;
+            color: black;
+           padding: 20px;
+           border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height:250px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .search-bar {
+                order: -1;
+                margin-bottom: 10px;
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cards {
+                
+              display: flex;
+              flex-wrap: wrap;
+              gap: 20px;
+               margin-top: 20px;
+               justify-content: center; /* Ensures items are aligned properly */
+              align-items: stretch; /* Ensures equal height */
+
+
+                
+            }
+
+
+        }
+
+        .symptom2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .sym2-1 {
+            flex: 1 1 200px;
+            margin: 10px;
+            background-color: #e8b89b;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 5px 8px #e8b89b;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function searchFunction() {
+            let input = document.getElementById("search-input").value.toLowerCase();
+            let elements = document.querySelectorAll(".container h1, .text-box ul li, .card h3");
+
+            elements.forEach(el => {
+                if (el.textContent.toLowerCase().includes(input)) {
+                    el.style.display = "block";
+                } else {
+                    el.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+    
+    <br>
+    <div class="symptom2">
+        <div class="sym2-1">
+            <h1>Hormonal Changes</h1>
+            Hormonal changes refer to fluctuations in hormone levels that occur naturally throughout life, influencing growth, metabolism, mood, reproduction, and overall health. These changes happen during puberty, the menstrual cycle, pregnancy, menopause, and due to stress or lifestyle factors.
+        </div>
+    </div>
+    <div class="content">
+        <div class="text-box">
+            <h3 align ="center">Key phases include:</h3>
+            <div class="symptom2">
+                <div class="sym2-1">
+                    <ul style="list-style-type:disc;">
+                        <li><span class="highlight"> Puberty</span> – Estrogen and progesterone increase, triggering menstruation and body development.</li><br>
+                        <li><span class="highlight"> Menstrual Cycle</span>  – Monthly hormonal shifts regulate ovulation and periods.</li><br>
+                        <li><span class="highlight">Pregnancy </span> – Hormone surges support fetal growth and bodily changes.</li><br>
+                        <li><span class="highlight"> Menopause</span> – Estrogen declines, leading to irregular periods, hot flashes, and mood changes.</li><br>
+                        <li><span class="highlight">Stress & Lifestyle </span>  – Diet, sleep, and stress impact hormone balance, affecting metabolism, mood, and fertility.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards">
+    
+       
+        <div class="card">
+            <a href="exerciseskink.html"><img src="kumapic/exercisek.jpg" alt="Exercise"></a>
+            <h3>Exercise & Diet</h3>
+        </div>
+        <div class="card">
+            <a href="skink.html"><img src="kumapic/hormonesk.jpg" alt="Skin Issues"></a>
+            <h3>Skin Issues</h3>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

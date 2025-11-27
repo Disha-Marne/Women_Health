@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="stylesl.css"-->
+    <title>Hormonal Shift and Perimenopause</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7E9AAA;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1E3A1E;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(242, 229, 229);
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #345B34;
+        }
+
+        .content {
+            padding: 0px 30px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            background: black;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        .search-bar {
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .content h2 {
+            color: #706641;
+            font-weight: bold;
+        }
+
+        .content ul {
+            padding: 20px;
+            max-width: 70%;
+            font-size: 18px;
+        }
+
+        .content li {
+            margin-bottom: 20px;
+        }
+
+        .content li strong {
+            font-weight: bold;
+        }
+
+        .image {
+            float: right;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        .text-box {
+            flex: 1;
+            min-width: 300px;
+            max-width: 900px;
+        }
+
+        .text-box h2 {
+            color: #432a20;
+            margin: 0px 40px;
+        }
+
+        .text-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .text-box ul li {
+            margin: 10px 0;
+        }
+
+        .symptom2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .sym2-1 {
+            margin: 10px 40px;
+            background-color: #3e8965;
+            padding: 10px 50px;
+            border-radius: 30px;
+            box-shadow: 5px 8px #3b6f53;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="community.html">COMMUNITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>SLEEP DISRUPTION</h2>
+        <img src="images/sleep-disruption.jpg" alt="Woman experiencing symptoms" class="image">
+        <ol>
+            <li>
+                <b>Hormonal Imbalances & Insomnia</b>
+                <ul>
+                    <li>
+                        Declining estrogen & progesterone levels make it harder to fall and stay asleep.</li>
+                    <li>
+                        Lower melatonin production affects the body's natural sleep cycle.</li>
+                    <li>
+                        High insulin and cortisol levels disturb sleep patterns, leading to restlessness and difficulty
+                        falling asleep.</li>
+                    <li>
+                        Progesterone dips before menstruation can lead to insomnia or restless sleep.</li>
+
+                </ul>
+            </li>
+            <li>
+                <strong>Night Sweats & Hot Flashes (Menopause & Perimenopause)</strong>
+                <ul>
+                    <li>
+                        Sudden body temperature fluctuations cause night sweats, leading to frequent awakenings.</li>
+
+                </ul>
+            </li>
+            <li>
+                <strong> Anxiety & Stress (Common in PCOS & Menopause)</strong>
+                <ul>
+                    <li>
+                        Increased cortisol (stress hormone) levels contribute to racing thoughts and difficulty
+                        unwinding.</li>
+
+                </ul>
+            </li>
+            <li>
+                <strong> Sleep Apnea & Snoring (Linked to PCOS & Menopause)</strong>
+                <ul>
+                    <li>
+                        PCOS increases the risk of sleep apnea, where breathing repeatedly stops and starts during
+                        sleep.</li>
+                    <li>
+                        Weight gain (common in PCOS & menopause) can contribute to snoring and poor sleep quality.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="text-box">
+        <h2>Ways to Improve Sleep & Prevent Insomnia </h2>
+        <div class="symptom2">
+            <div class="sym2-1">
+                <ul style="list-style-type:disc;">
+                    <li><strong> Follow a Consistent Sleep Schedule</strong> – Go to bed and wake up at the same time
+                        daily, even on weekends.</li>
+                    <li><strong>Create a Relaxing Bedtime Routine</strong> – Wind down with activities like reading,
+                        meditation, or a warm bath.</li>
+                    <li><strong> Limit Screen Time Before Bed</strong> – Avoid phones, TVs, and laptops at least an hour
+                        before sleeping.</li>
+                    <li><strong>Reduce Caffeine & Alcohol Intake</strong> – Avoid stimulants in the evening to prevent
+                        sleep disturbances.</li>
+                    <li><strong>Take Breaks at Work</strong> – Short breaks throughout the day can improve focus and
+                        prevent burnout.</li>
+                    <li><strong>Exercise Regularly</strong> – Engaging in physical activity during the day promotes
+                        better sleep.</li>
+
+                </ul>
+            </div>
+
+
+</body>
+
+</html>

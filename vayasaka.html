@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIYAMA - Women's Health</title>
+    <!--link rel="stylesheet" href="styles1.css"-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f1e0;
+            color: #fdf6f6;
+        }
+
+        /* Header */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f6f1e0;
+            padding: 20px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1E3A1E;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(242, 229, 229);
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #345B34;
+        }
+
+        .search-container {
+            display: flex;
+        }
+
+        .search-container input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            background: #555;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        /* Icons 
+.icons i {
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+}
+    */
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .hero img {
+            height: 200px;
+            width: 250px;
+            border-radius: 20%;
+        }
+
+        .hero-text {
+            padding: 20px;
+            color: #000000
+        }
+
+        /* Health Issues Grid */
+        .health-issues {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .issue {
+            background-color: #b8a881;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .issue img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .issue:hover {
+            background-color: #b1a27e;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .health-issues {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .health-issues {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="community.html">COMMUNITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="picva/v1.jpg" alt="Middle Age Women">
+            <div class="hero-text">
+                <h2>Vayasaka</h2>
+                <p>"
+                    "You are crafting a life that's uniquely yours—bold, beautiful, and full of purpose. ✨ Trust
+                    yourself, embrace the journey, and shine your brightest! 💖"</p>
+            </div>
+        </section>
+
+        <section class="health-issues">
+            <a href="menstrualv.html" class="issue"><img src="picva/mentruation.jpg" alt="abc" height="50px"
+                    width="150px">
+                <p>Menstrual Health</p>
+            </a>
+            <a href="rephealthv.html" class="issue"><img src="picva/reproductive health.jpg" height="150px"
+                    width="150px" alt="">
+                <p>Reproductive Health</p>
+            </a>
+            <a href="Mentalv.html" class="issue"><img src="picva/mental health'.jpg" alt="abc" height="150px"
+                    width="150px">
+                <p>Mental Health</p>
+            </a>
+            <a href="hormonalchangev.html" class="issue"><img src="picva/hormonal changes.jpg" alt="">
+                <p>Hormonal Changes</p>
+            </a>
+        </section>
+        <section class="health-issues">
+            <a href="vagdryv.html" class="issue"><img src="picva/vaginal dryness.jpg" alt="">
+                <p>Vaginal Dryness</p>
+            </a>
+            <a href="weightgainv.html" class="issue"><img src="picva/weight.jpg" alt="" height="150px" width="150px">
+                <p>Weight Gain</p>
+            </a>
+            <a href="fatiguev.html" class="issue"><img src="picva/Fatigue photo.webp" alt="">
+                <p>Fatigue</p>
+            </a>
+            <a href="insomniav.html" class="issue"><img src="picva/insomnia.jpg" alt="">
+                <p>Insomnia</p>
+            </a>
+        </section>
+    </main>
+
+</body>
+
+</html>

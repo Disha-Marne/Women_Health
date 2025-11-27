@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises for PCOS/PCOD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f4f7f9;
+    color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(120deg, #004d7a, #008793);
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Exercise Sections */
+.exercise-section {
+    margin: 40px 0;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-section h2 {
+    color: #005f73;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Exercise Container */
+.exercise-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.exercise-card {
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.exercise-card:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.exercise-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.exercise-card h3 {
+    color: #0277bd;
+    font-size: 18px;
+}
+
+.exercise-card p {
+    font-size: 14px;
+}
+
+/* Exercises to Avoid */
+.avoid {
+    background: #fbe9e7;
+}
+
+.avoid-card {
+    background: #ffcdd2;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background: #008793;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .exercise-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .exercise-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>Exercises for PCOS/PCOD</h1>
+        <p>Manage insulin resistance, reduce stress, and balance hormones naturally.</p>
+    </header>
+
+    <section class="exercise-section">
+        <h2>Best Exercises for PCOS/PCOD</h2>
+        <div class="exercise-container">
+            <div class="exercise-card">
+                <img src="exercises/yoga.png" alt="Yoga for PCOS">
+                <h3>Yoga & Meditation</h3>
+                <p>Reduces cortisol levels, improves insulin sensitivity, and supports hormonal balance.</p>
+            </div>
+            <div class="exercise-card">
+                <img src="exercises/walk.png" alt="Walking">
+                <h3>Brisk Walking</h3>
+                <p>Enhances metabolism, reduces stress, and stabilizes blood sugar levels.</p>
+            </div>
+            <div class="exercise-card">
+                <img src="exercises/heavy_lift.png" alt="Strength Training">
+                <h3>Strength Training</h3>
+                <p>Boosts metabolism, improves insulin resistance, and regulates testosterone levels.</p>
+            </div>
+            <div class="exercise-card">
+                <img src="exercises/low_cardio.jpg" alt="Low-Impact Cardio">
+                <h3>Low-Impact Cardio</h3>
+                <p>Helps regulate estrogen levels, improves circulation, and reduces inflammation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="exercise-section avoid">
+        <h2>Exercises to Avoid</h2>
+        <div class="exercise-container">
+            <div class="exercise-card avoid-card">
+                <img src="exercises/overtraning.jpg" alt="Overtraining">
+                <h3>Overtraining</h3>
+                <p>Can lead to excessive cortisol release, increasing insulin resistance.</p>
+            </div>
+            <div class="exercise-card avoid-card">
+                <img src="exercises/high_cardio.png" alt="High-Intensity Cardio">
+                <h3>High-Intensity Cardio</h3>
+                <p>May spike stress hormones, worsening PCOS symptoms.</p>
+            </div>
+            <div class="exercise-card avoid-card">
+                <img src="exercises/fast.jpg" alt="Excessive Fasting Workouts">
+                <h3>Excessive Fasting Workouts</h3>
+                <p>Can cause hormonal imbalances, leading to fatigue and menstrual irregularities.</p>
+            </div>
+            <div class="exercise-card avoid-card">
+                <img src="exercises/heavy_lift.png" alt="Heavy Weightlifting">
+                <h3>Heavy Weightlifting</h3>
+                <p>May cause excessive testosterone production, worsening PCOS symptoms.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>A balanced exercise routine can help manage PCOS/PCOD effectively.</p>
+    </footer>
+
+</body>
+</html>

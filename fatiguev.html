@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIYAMA - Fatigue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f1e0;
+            padding: 10px 15px;
+        }
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E3A1E;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(242, 229, 229);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #345B34;
+}
+
+.search-container {
+    display: flex;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+        .container {
+            padding: 20px;
+        }
+    
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .image-box img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .text-box {
+            flex: 1;
+            min-width: 300px;
+        }
+        .text-box h2 {
+            color: #3d1d10;
+        }
+        .text-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .text-box ul li {
+            margin: 10px 0;
+        }
+        
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .card {
+            flex: 1;
+            min-width: 150px;
+            max-width: 250px;
+            text-align: center;
+            background-color: #013220;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .search-bar {
+                order: -1;
+                margin-bottom: 10px;
+            }
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .symptom2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .sym2-1 {
+            flex: 1 1 200px;
+            margin: 10px;
+            background-color: #c3b48e;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 5px 8px #ab9d78;
+        }
+
+    </style>
+    <script>
+        function searchFunction() {
+            let input = document.getElementById("search-input").value.toLowerCase();
+            let elements = document.querySelectorAll(".container h1, .text-box ul li, .card h3");
+            
+            elements.forEach(el => {
+                if (el.textContent.toLowerCase().includes(input)) {
+                    el.style.display = "block";
+                } else {
+                    el.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">NIYAMA</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="community.html">COMMUNITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        
+        <div class="symptom2">
+            <div class="sym2-1"><h1>Fatigue</h1>Fatigue is a common issue among women in their 20s and 30s, often caused by a combination of lifestyle factors, hormonal changes, and underlying health conditions. Persistent tiredness can affect productivity, mood, and overall well-being. While occasional fatigue is normal, chronic exhaustion may signal an underlying issue that needs attention. Identifying the causes and making lifestyle adjustments can help restore energy levels and improve daily functioning.</div></div>
+        <div class="content">
+            <div class="image-box">
+                <br><br><br><br><br><br><img src="picva/Fatigue photo.webp" >
+            </div>
+            <div class="text-box">
+                <h2>Common Causes of Fatigue </h2>
+                <div class="symptom2">
+                    <div class="sym2-1">
+                <ul style="list-style-type:disc;">
+                    <li><strong>Stress & Mental Exhaustion</strong> – High levels of stress and overthinking can mentally drain energy, leading to chronic fatigue.
+
+                        Emotional stress from work, relationships, or personal responsibilities can impact physical energy levels.</li>
+                    <li><strong>Hormonal Imbalances</strong> – Fluctuations in estrogen and progesterone during the menstrual cycle can cause fatigue, especially before periods (PMS).
+
+                        Thyroid disorders (hypothyroidism) slow metabolism and lead to constant tiredness.</li>
+                    <li><strong> Poor Diet & Nutrient Deficiencies</strong> – Low iron levels (anemia) can cause weakness, dizziness, and fatigue, especially in women with heavy periods.
+
+                        Deficiencies in vitamin D, B12, and magnesium can lead to low energy levels and muscle weakness.
+                        
+                        Eating too many processed foods and refined sugars can cause energy crashes.</li>
+                    <li><strong>Dehydration</strong> – Not drinking enough water can lead to sluggishness, headaches, and reduced concentration.
+
+                        Caffeine and sugary drinks can cause temporary energy boosts followed by crashes.</li>
+                        <li><strong>Postpartum & Pregnancy Fatigue</strong> – Hormonal changes during pregnancy and postpartum can cause extreme tiredness.
+
+                            Sleep deprivation from caring for a newborn affects energy levels.</li>
+                            <li><strong>Overworking & Burnout</strong> – Working long hours without breaks can lead to mental and physical exhaustion.
+
+                                A lack of work-life balance drains energy and reduces overall well-being.</li>
+                                <li><strong>Chronic Fatigue Syndrome (CFS)</strong> – A medical condition causing extreme, unexplained tiredness that doesn’t improve with rest.
+
+                                    Symptoms include brain fog, muscle pain, and prolonged fatigue after minimal activity.</li>
+                            </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-box">
+            <h2>Ways to Boost Energy & Prevent Fatigue </h2>
+            <div class="symptom2">
+                <div class="sym2-1">
+            <ul style="list-style-type:disc;">
+                <li><strong>Prioritize Quality Sleep</strong> – Maintain a consistent sleep schedule and create a relaxing bedtime routine.</li>
+                <li><strong>Manage Stress Effectively</strong> – Practice meditation, deep breathing, or journaling to reduce mental fatigue.</li>
+                <li><strong> Exercise Regularly</strong> – Even light movement, such as walking or stretching, can improve energy levels.</li>
+                <li><strong>Limit Caffeine & Sugar</strong> – Avoid excessive coffee, energy drinks, and sugary snacks that cause energy crashes.</li>
+                    <li><strong>Take Breaks at Work</strong> – Short breaks throughout the day can improve focus and prevent burnout.</li>
+                        <li><strong>Consult a Doctor if Needed</strong> – If fatigue is persistent or unexplained, a healthcare provider can check for underlying conditions.</li>
+                            <li><strong>Check for Deficiencies</strong> – Blood tests can help identify low iron, B12, or vitamin D levels that may contribute to fatigue.</li>
+                        </ul>
+            </div>
+            </div>
+        </div>
+    </div>
